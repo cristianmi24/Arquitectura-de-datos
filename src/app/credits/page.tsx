@@ -18,7 +18,7 @@ export default function CreditsPage() {
     {
       nameKey: "creditsPage.member1Name",
       roleKey: "creditsPage.member1Role",
-      imageUrl: "https://picsum.photos/seed/WM/80/80", // Unique image URL
+      imageUrl: "https://pbs.twimg.com/profile_images/1909817501640175616/gM7Wv4cw_400x400.jpg", // Unique image URL
       fallback: "WM", // Fallback initials
       aiHint: "woman portrait", // AI hint for image generation
       socials: {
@@ -30,7 +30,7 @@ export default function CreditsPage() {
     {
       nameKey: "creditsPage.member2Name",
       roleKey: "creditsPage.member2Role",
-      imageUrl: "https://picsum.photos/seed/M1/80/80", // Unique image URL
+      imageUrl: "https://media.licdn.com/dms/image/v2/D4E03AQHXYLM__g3Mqg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1677090533027?e=1751500800&v=beta&t=cn8p_F1NyzlqFsUBpBuBME1Z4gBvADgHA-I79k5aeBI", // Unique image URL
       fallback: "M1", // Fallback initials
       aiHint: "man portrait", // AI hint for image generation
       socials: {
@@ -42,7 +42,7 @@ export default function CreditsPage() {
     {
       nameKey: "creditsPage.member3Name",
       roleKey: "creditsPage.member3Role",
-      imageUrl: "https://picsum.photos/seed/M2/80/80", // Unique image URL
+      imageUrl: "https://pbs.twimg.com/profile_images/1856212805537394688/UdaqYNUk_400x400.jpg", // Unique image URL
       fallback: "M2", // Fallback initials
       aiHint: "man portrait", // AI hint for image generation
       socials: {
