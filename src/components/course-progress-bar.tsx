@@ -4,6 +4,7 @@ import { Progress } from "@/components/ui/progress";
 import { useCourseProgress } from "@/hooks/use-course-progress";
 import { useLanguage } from "@/context/language-context";
 import { useEffect, useState } from "react";
+import { LOCAL_STORAGE_KEYS } from "@/lib/constants";
 
 interface CourseProgressBarProps {
   showLabel?: boolean;
