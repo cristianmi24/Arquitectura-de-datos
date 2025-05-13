@@ -48,7 +48,7 @@ export default function HomePage() {
       <section className="text-center py-12 md:py-16 bg-card rounded-lg shadow-lg">
         <div className="container mx-auto px-4">
           <Image 
-            src="https://www.yarquitectura.com/wp-content/uploads/arquitectura-de-datos.jpg" 
+            src="https://www.yarquitectura.com/wp-content/uploads/2023/06/arquitectura-de-datos.png" 
             alt="Data Architecture Abstract" 
             width={1200} 
             height={400}

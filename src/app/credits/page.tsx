@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useLanguage } from '@/context/language-context';
@@ -16,38 +15,41 @@ export default function CreditsPage() {
   }
 
   const teamMembers = [
-    { 
-      nameKey: "creditsPage.member1Name", 
-      roleKey: "creditsPage.member1Role", 
-      avatar: "WM", // Seed for avatar
+    {
+      nameKey: "creditsPage.member1Name",
+      roleKey: "creditsPage.member1Role",
+      imageUrl: "https://picsum.photos/seed/WM/80/80", // Unique image URL
+      fallback: "WM", // Fallback initials
       aiHint: "woman portrait", // AI hint for image generation
       socials: {
         linkedin: "#",
         twitter: "#",
         github: "#"
-      } 
+      }
     },
-    { 
-      nameKey: "creditsPage.member2Name", 
-      roleKey: "creditsPage.member2Role", 
-      avatar: "M1", // Seed for avatar
+    {
+      nameKey: "creditsPage.member2Name",
+      roleKey: "creditsPage.member2Role",
+      imageUrl: "https://picsum.photos/seed/M1/80/80", // Unique image URL
+      fallback: "M1", // Fallback initials
       aiHint: "man portrait", // AI hint for image generation
       socials: {
         linkedin: "#",
         twitter: "#",
         github: "#"
-      } 
+      }
     },
-    { 
-      nameKey: "creditsPage.member3Name", 
-      roleKey: "creditsPage.member3Role", 
-      avatar: "M2", // Seed for avatar
+    {
+      nameKey: "creditsPage.member3Name",
+      roleKey: "creditsPage.member3Role",
+      imageUrl: "https://picsum.photos/seed/M2/80/80", // Unique image URL
+      fallback: "M2", // Fallback initials
       aiHint: "man portrait", // AI hint for image generation
       socials: {
         linkedin: "#",
         twitter: "#",
         github: "#"
-      } 
+      }
     }
   ];
 
@@ -69,8 +71,8 @@ export default function CreditsPage() {
             <Card key={item.nameKey} className="shadow-md hover:shadow-lg transition-shadow">
               <CardContent className="pt-6 flex flex-col items-center text-center">
                 <Avatar className="w-20 h-20 mb-4 border-2 border-primary">
-                  <AvatarImage src={`https://picsum.photos/seed/${item.avatar}/80/80`} data-ai-hint={item.aiHint} />
-                  <AvatarFallback>{item.avatar}</AvatarFallback>
+                  <AvatarImage src={item.imageUrl} alt={t(item.nameKey)} data-ai-hint={item.aiHint} />
+                  <AvatarFallback>{item.fallback}</AvatarFallback>
                 </Avatar>
                 <h3 className="text-lg font-medium">{t(item.nameKey)}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{t(item.roleKey)}</p>
@@ -99,7 +101,7 @@ export default function CreditsPage() {
           ))}
         </div>
       </section>
-      
+
       <section>
         <h2 className="text-2xl font-semibold mb-4">{t('creditsPage.acknowledgements')}</h2>
         <Card className="shadow-md">
@@ -111,4 +113,3 @@ export default function CreditsPage() {
     </div>
   );
 }
-
