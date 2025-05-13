@@ -1,0 +1,122 @@
+{
+  "appName": "Academia de Arquitecto de Datos",
+  "nav": {
+    "home": "Inicio",
+    "credits": "Créditos",
+    "content": "Contenido",
+    "exercises": "Ejercicios",
+    "suggestions": "Sugerencias",
+    "admin": "Admin"
+  },
+  "themeToggle": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "Cambiar Idioma"
+  },
+  "footer": {
+    "text": "© {year} Academia de Arquitecto de Datos. Todos los derechos reservados."
+  },
+  "homePage": {
+    "welcomeTitle": "¡Bienvenido a la Academia de Arquitecto de Datos!",
+    "welcomeMessage": "Tu viaje para dominar la arquitectura de datos comienza aquí. Explora nuestros módulos completos y ejercicios interactivos para construir una base sólida en los sistemas de datos modernos.",
+    "startButton": "Comenzar a Aprender",
+    "featuresTitle": "Características del Curso",
+    "featureModernDesign": "Diseño Moderno e Intuitivo",
+    "featureModernDesignDesc": "Disfruta de una interfaz limpia y receptiva accesible en todos los dispositivos.",
+    "featureLightDark": "Modo Claro/Oscuro",
+    "featureLightDarkDesc": "Cambia de tema para una visualización cómoda, de día o de noche.",
+    "featureMultilingual": "Soporte Multilingüe",
+    "featureMultilingualDesc": "Aprende en tu idioma preferido: inglés o español.",
+    "featureProgressBar": "Seguimiento del Progreso",
+    "featureProgressBarDesc": "Monitorea tu viaje de aprendizaje con una barra de progreso visual.",
+    "featureInteractiveExercises": "Ejercicios Interactivos",
+    "featureInteractiveExercisesDesc": "Refuerza tus conocimientos con actividades prácticas para cada módulo.",
+    "featureFeedback": "Sistema de Sugerencias",
+    "featureFeedbackDesc": "Comparte tus ideas y sugerencias para ayudarnos a mejorar."
+  },
+  "creditsPage": {
+    "title": "Créditos",
+    "description": "Este OVA (Objeto Virtual de Aprendizaje) sobre Introducción a la Arquitectura de Datos fue posible gracias a la contribución de las siguientes personas y tecnologías:",
+    "authors": "Autores y Creadores de Contenido",
+    "authorName": "Modelo de Lenguaje AI y Equipo de Desarrollo",
+    "authorRole": "Contenido y Estructura del Curso",
+    "tutors": "Tutores Académicos",
+    "tutorName": "Expertos en la Materia (Simulado)",
+    "tutorRole": "Guía y Revisión",
+    "developers": "Equipo de Desarrollo",
+    "developerName": "Firebase Studio AI",
+    "developerRole": "Implementación en Next.js, Diseño UI/UX",
+    "technologies": "Tecnologías Utilizadas",
+    "techNextJs": "Next.js - Framework de React",
+    "techTailwindCss": "Tailwind CSS - Framework CSS Utility-first",
+    "techShadcnUi": "Shadcn/UI - Componentes UI Reutilizables",
+    "techLucideIcons": "Lucide React - Biblioteca de Iconos",
+    "techGenkit": "Genkit - Integración AI (Simulado para contenido)",
+    "acknowledgements": "Agradecimientos",
+    "acknowledgementText": "Un agradecimiento especial a la comunidad de código abierto y a los creadores de contenido educativo cuyo trabajo inspira y permite proyectos como este."
+  },
+  "suggestionsPage": {
+    "title": "Sugerencias",
+    "description": "¡Valoramos tus comentarios! Utiliza el siguiente formulario para enviarnos tus sugerencias, comentarios o cualquier problema que encuentres.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu Nombre",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "tu.correo@ejemplo.com",
+    "suggestionLabel": "Sugerencia",
+    "suggestionPlaceholder": "Escribe tu sugerencia aquí...",
+    "submitButton": "Enviar Sugerencia",
+    "successMessage": "¡Gracias! Tu sugerencia ha sido enviada.",
+    "errorMessage": "Hubo un error al enviar tu sugerencia. Por favor, inténtalo de nuevo."
+  },
+  "adminPage": {
+    "title": "Panel de Administración",
+    "loginTitle": "Acceso de Administrador",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingresa la contraseña",
+    "loginButton": "Acceder",
+    "loginError": "Contraseña incorrecta. Por favor, inténtalo de nuevo.",
+    "suggestionsReceivedTitle": "Sugerencias Recibidas",
+    "noSuggestions": "Aún no se han recibido sugerencias.",
+    "submittedBy": "Enviado por: {name} ({email})",
+    "submittedOn": "El: {date}"
+  },
+  "courseModulesPage": {
+    "title": "Contenido del Curso",
+    "description": "Explora los módulos para aprender sobre Arquitectura de Datos. Sigue tu progreso a medida que completas cada tema.",
+    "progress": "Tu Progreso",
+    "module": "Módulo",
+    "viewModule": "Ver Módulo"
+  },
+  "modulePage": {
+    "module": "Módulo",
+    "topics": "Temas",
+    "topic": "Tema",
+    "markAsCompleted": "Marcar como Completado",
+    "markAsIncomplete": "Marcar como Incompleto",
+    "allTopicsCompleted": "¡Todos los temas de este módulo completados!",
+    "progress": "Progreso del Módulo"
+  },
+  "exercisesPage": {
+    "title": "Ejercicios",
+    "description": "Pon a prueba tus conocimientos con ejercicios interactivos para cada módulo. Selecciona un ejercicio para comenzar.",
+    "exercise": "Ejercicio",
+    "startExercise": "Comenzar Ejercicio",
+    "noExercisesAvailable": "No hay ejercicios disponibles en este momento."
+  },
+  "exercisePage": {
+    "exercise": "Ejercicio",
+    "question": "Pregunta",
+    "submitAnswer": "Enviar Respuesta",
+    "correctAnswer": "¡Correcto!",
+    "incorrectAnswer": "Incorrecto. Por favor, inténtalo de nuevo.",
+    "comingSoon": "Contenido del ejercicio próximamente."
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "message": "¡Ups! Parece que la página que estás buscando no existe.",
+    "goHome": "Ir a la Página de Inicio"
+  }
+}

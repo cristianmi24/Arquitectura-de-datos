@@ -1,0 +1,122 @@
+{
+  "appName": "Data Architect Academy",
+  "nav": {
+    "home": "Home",
+    "credits": "Credits",
+    "content": "Content",
+    "exercises": "Exercises",
+    "suggestions": "Suggestions",
+    "admin": "Admin"
+  },
+  "themeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "Change Language"
+  },
+  "footer": {
+    "text": "© {year} Data Architect Academy. All rights reserved."
+  },
+  "homePage": {
+    "welcomeTitle": "Welcome to Data Architect Academy!",
+    "welcomeMessage": "Your journey to mastering data architecture starts here. Explore our comprehensive modules and interactive exercises to build a strong foundation in modern data systems.",
+    "startButton": "Start Learning",
+    "featuresTitle": "Course Features",
+    "featureModernDesign": "Modern & Intuitive Design",
+    "featureModernDesignDesc": "Enjoy a clean, responsive interface accessible on all devices.",
+    "featureLightDark": "Light/Dark Mode",
+    "featureLightDarkDesc": "Switch themes for comfortable viewing, day or night.",
+    "featureMultilingual": "Multilingual Support",
+    "featureMultilingualDesc": "Learn in your preferred language: English or Spanish.",
+    "featureProgressBar": "Progress Tracking",
+    "featureProgressBarDesc": "Monitor your learning journey with a visual progress bar.",
+    "featureInteractiveExercises": "Interactive Exercises",
+    "featureInteractiveExercisesDesc": "Reinforce your knowledge with hands-on activities for each module.",
+    "featureFeedback": "Feedback System",
+    "featureFeedbackDesc": "Share your thoughts and suggestions to help us improve."
+  },
+  "creditsPage": {
+    "title": "Credits",
+    "description": "This OVA (Virtual Learning Object) on Introduction to Data Architecture was made possible by the contribution of the following individuals and technologies:",
+    "authors": "Authors & Content Creators",
+    "authorName": "AI Language Model & Development Team",
+    "authorRole": "Course Content & Structure",
+    "tutors": "Academic Tutors",
+    "tutorName": "Subject Matter Experts (Simulated)",
+    "tutorRole": "Guidance and Review",
+    "developers": "Development Team",
+    "developerName": "Firebase Studio AI",
+    "developerRole": "Next.js Implementation, UI/UX Design",
+    "technologies": "Technologies Used",
+    "techNextJs": "Next.js - React Framework",
+    "techTailwindCss": "Tailwind CSS - Utility-first CSS Framework",
+    "techShadcnUi": "Shadcn/UI - Re-usable UI Components",
+    "techLucideIcons": "Lucide React - Icon Library",
+    "techGenkit": "Genkit - AI Integration (Simulated for content)",
+    "acknowledgements": "Acknowledgements",
+    "acknowledgementText": "Special thanks to the open-source community and educational content creators whose work inspires and enables projects like this."
+  },
+  "suggestionsPage": {
+    "title": "Suggestions",
+    "description": "We value your feedback! Please use the form below to send us your suggestions, comments, or any issues you encounter.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "suggestionLabel": "Suggestion",
+    "suggestionPlaceholder": "Enter your suggestion here...",
+    "submitButton": "Submit Suggestion",
+    "successMessage": "Thank you! Your suggestion has been submitted.",
+    "errorMessage": "There was an error submitting your suggestion. Please try again."
+  },
+  "adminPage": {
+    "title": "Admin Panel",
+    "loginTitle": "Admin Login",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter password",
+    "loginButton": "Login",
+    "loginError": "Invalid password. Please try again.",
+    "suggestionsReceivedTitle": "Suggestions Received",
+    "noSuggestions": "No suggestions received yet.",
+    "submittedBy": "Submitted by: {name} ({email})",
+    "submittedOn": "On: {date}"
+  },
+  "courseModulesPage": {
+    "title": "Course Content",
+    "description": "Explore the modules to learn about Data Architecture. Track your progress as you complete each topic.",
+    "progress": "Your Progress",
+    "module": "Module",
+    "viewModule": "View Module"
+  },
+  "modulePage": {
+    "module": "Module",
+    "topics": "Topics",
+    "topic": "Topic",
+    "markAsCompleted": "Mark as Completed",
+    "markAsIncomplete": "Mark as Incomplete",
+    "allTopicsCompleted": "All topics in this module completed!",
+    "progress": "Module Progress"
+  },
+  "exercisesPage": {
+    "title": "Exercises",
+    "description": "Test your knowledge with interactive exercises for each module. Select an exercise to begin.",
+    "exercise": "Exercise",
+    "startExercise": "Start Exercise",
+    "noExercisesAvailable": "No exercises available at the moment."
+  },
+  "exercisePage": {
+    "exercise": "Exercise",
+    "question": "Question",
+    "submitAnswer": "Submit Answer",
+    "correctAnswer": "Correct!",
+    "incorrectAnswer": "Incorrect. Please try again.",
+    "comingSoon": "Exercise content coming soon."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Oops! The page you're looking for doesn't seem to exist.",
+    "goHome": "Go to Homepage"
+  }
+}
