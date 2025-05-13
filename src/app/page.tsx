@@ -48,12 +48,12 @@ export default function HomePage() {
       <section className="text-center py-12 md:py-16 bg-card rounded-lg shadow-lg">
         <div className="container mx-auto px-4">
           <Image 
-            src="https://picsum.photos/seed/dataarchitecture/1200/400" 
+            src="https://www.yarquitectura.com/wp-content/uploads/arquitectura-de-datos.jpg" 
             alt="Data Architecture Abstract" 
             width={1200} 
             height={400}
             className="rounded-lg mb-8 mx-auto object-cover w-full max-h-[300px] md:max-h-[400px]"
-            data-ai-hint="data abstract"
+            data-ai-hint="data architecture"
           />
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-6">
             {t('homePage.welcomeTitle')}
