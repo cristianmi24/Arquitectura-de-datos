@@ -11,7 +11,8 @@
   "themeToggle": {
     "light": "Light",
     "dark": "Dark",
-    "system": "System"
+    "system": "System",
+    "toggle": "Toggle theme"
   },
   "languageSwitcher": {
     "changeLanguage": "Change Language"

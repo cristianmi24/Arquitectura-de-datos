@@ -11,7 +11,8 @@
   "themeToggle": {
     "light": "Claro",
     "dark": "Oscuro",
-    "system": "Sistema"
+    "system": "Sistema",
+    "toggle": "Cambiar tema"
   },
   "languageSwitcher": {
     "changeLanguage": "Cambiar Idioma"
