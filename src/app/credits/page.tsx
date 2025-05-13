@@ -1,16 +1,11 @@
+
 "use client";
 
 import { useLanguage } from '@/context/language-context';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { UsersIcon, BriefcaseIcon, CpuIcon, BrainIcon, SettingsIcon, CodeIcon } from 'lucide-react';
-import type { Metadata } from 'next';
-
-// export const metadata: Metadata = {
-//   title: 'Credits',
-// };
-// Metadata for client components should be exported from page.tsx of a Server Component parent, or layout.tsx.
-// For now, setting title via useLanguage hook if possible or document.title.
+import { UsersIcon, LinkedinIcon, TwitterIcon, GithubIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function CreditsPage() {
   const { t, language } = useLanguage();
@@ -20,37 +15,42 @@ export default function CreditsPage() {
     document.title = `${t('nav.credits')} | ${t('appName')}`;
   }
 
-  const creditSections = [
-    {
-      titleKey: "creditsPage.authors",
-      icon: BrainIcon,
-      items: [
-        { nameKey: "creditsPage.authorName", roleKey: "creditsPage.authorRole", avatar: "AI" }
-      ]
+  const teamMembers = [
+    { 
+      nameKey: "creditsPage.member1Name", 
+      roleKey: "creditsPage.member1Role", 
+      avatar: "WM", // Seed for avatar
+      aiHint: "woman portrait", // AI hint for image generation
+      socials: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      } 
     },
-    {
-      titleKey: "creditsPage.tutors",
-      icon: UsersIcon,
-      items: [
-        { nameKey: "creditsPage.tutorName", roleKey: "creditsPage.tutorRole", avatar: "SM" }
-      ]
+    { 
+      nameKey: "creditsPage.member2Name", 
+      roleKey: "creditsPage.member2Role", 
+      avatar: "M1", // Seed for avatar
+      aiHint: "man portrait", // AI hint for image generation
+      socials: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      } 
     },
-    {
-      titleKey: "creditsPage.developers",
-      icon: CodeIcon,
-      items: [
-        { nameKey: "creditsPage.developerName", roleKey: "creditsPage.developerRole", avatar: "FS" }
-      ]
+    { 
+      nameKey: "creditsPage.member3Name", 
+      roleKey: "creditsPage.member3Role", 
+      avatar: "M2", // Seed for avatar
+      aiHint: "man portrait", // AI hint for image generation
+      socials: {
+        linkedin: "#",
+        twitter: "#",
+        github: "#"
+      } 
     }
   ];
 
-  const technologies = [
-    { nameKey: "creditsPage.techNextJs", icon: SettingsIcon },
-    { nameKey: "creditsPage.techTailwindCss", icon: SettingsIcon },
-    { nameKey: "creditsPage.techShadcnUi", icon: SettingsIcon },
-    { nameKey: "creditsPage.techLucideIcons", icon: SettingsIcon },
-    { nameKey: "creditsPage.techGenkit", icon: CpuIcon },
-  ];
 
   return (
     <div className="space-y-12">
@@ -59,42 +59,43 @@ export default function CreditsPage() {
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t('creditsPage.description')}</p>
       </section>
 
-      {creditSections.map(section => (
-        <section key={section.titleKey}>
-          <h2 className="text-2xl font-semibold mb-6 flex items-center">
-            <section.icon className="w-7 h-7 text-primary mr-3" />
-            {t(section.titleKey)}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {section.items.map(item => (
-              <Card key={item.nameKey} className="shadow-md hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6 flex flex-col items-center text-center">
-                  <Avatar className="w-20 h-20 mb-4 border-2 border-primary">
-                    <AvatarImage src={`https://picsum.photos/seed/${item.avatar}/80/80`} data-ai-hint="person portrait" />
-                    <AvatarFallback>{item.avatar}</AvatarFallback>
-                  </Avatar>
-                  <h3 className="text-lg font-medium">{t(item.nameKey)}</h3>
-                  <p className="text-sm text-muted-foreground">{t(item.roleKey)}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      ))}
-
       <section>
         <h2 className="text-2xl font-semibold mb-6 flex items-center">
-          <BriefcaseIcon className="w-7 h-7 text-primary mr-3" />
-          {t('creditsPage.technologies')}
+          <UsersIcon className="w-7 h-7 text-primary mr-3" />
+          {t('creditsPage.teamTitle')}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {technologies.map(tech => (
-             <Card key={tech.nameKey} className="shadow-md hover:shadow-lg transition-shadow">
-               <CardContent className="pt-6 flex flex-col items-center text-center space-y-2">
-                 <tech.icon className="w-8 h-8 text-accent mb-2" />
-                 <p className="text-sm font-medium">{t(tech.nameKey)}</p>
-               </CardContent>
-             </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teamMembers.map(item => (
+            <Card key={item.nameKey} className="shadow-md hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 flex flex-col items-center text-center">
+                <Avatar className="w-20 h-20 mb-4 border-2 border-primary">
+                  <AvatarImage src={`https://picsum.photos/seed/${item.avatar}/80/80`} data-ai-hint={item.aiHint} />
+                  <AvatarFallback>{item.avatar}</AvatarFallback>
+                </Avatar>
+                <h3 className="text-lg font-medium">{t(item.nameKey)}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{t(item.roleKey)}</p>
+                <div className="flex space-x-3">
+                  {item.socials.linkedin && (
+                    <Link href={item.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <LinkedinIcon className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
+                    </Link>
+                  )}
+                  {item.socials.twitter && (
+                    <Link href={item.socials.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                       {/* Using a simple SVG for X as lucide might not have it */}
+                       <svg className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                       </svg>
+                    </Link>
+                  )}
+                  {item.socials.github && (
+                    <Link href={item.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <GithubIcon className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
+                    </Link>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </section>
@@ -110,3 +111,4 @@ export default function CreditsPage() {
     </div>
   );
 }
+

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useParams, notFound, useRouter } from 'next/navigation';
@@ -11,6 +12,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useState, useEffect } from 'react';
 import type { Question } from '@/types';
+import { cn } from '@/lib/utils'; // Corrected import
 
 export default function ExercisePage() {
   const params = useParams();
@@ -78,7 +80,7 @@ export default function ExercisePage() {
       </RadioGroup>
       {submitted && results[question.id] === false && (
         <p className="mt-2 text-sm text-red-600">
-          {t('exercisePage.incorrectAnswer')} {t('exercisePage.correctAnswer')} {question.options[question.correctAnswerIndex][language]}
+          {t('exercisePage.incorrectAnswer')} {question.options[question.correctAnswerIndex][language]}
         </p>
       )}
       {submitted && results[question.id] === true && (

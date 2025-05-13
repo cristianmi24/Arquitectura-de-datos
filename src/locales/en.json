@@ -1,3 +1,4 @@
+
 {
   "appName": "Data Architect Academy",
   "nav": {
@@ -41,21 +42,13 @@
   "creditsPage": {
     "title": "Credits",
     "description": "This OVA (Virtual Learning Object) on Introduction to Data Architecture was made possible by the contribution of the following individuals and technologies:",
-    "authors": "Authors & Content Creators",
-    "authorName": "AI Language Model & Development Team",
-    "authorRole": "Course Content & Structure",
-    "tutors": "Academic Tutors",
-    "tutorName": "Subject Matter Experts (Simulated)",
-    "tutorRole": "Guidance and Review",
-    "developers": "Development Team",
-    "developerName": "Firebase Studio AI",
-    "developerRole": "Next.js Implementation, UI/UX Design",
-    "technologies": "Technologies Used",
-    "techNextJs": "Next.js - React Framework",
-    "techTailwindCss": "Tailwind CSS - Utility-first CSS Framework",
-    "techShadcnUi": "Shadcn/UI - Re-usable UI Components",
-    "techLucideIcons": "Lucide React - Icon Library",
-    "techGenkit": "Genkit - AI Integration (Simulated for content)",
+    "teamTitle": "Development Team",
+    "member1Name": "AI Language Model",
+    "member1Role": "Lead Developer & Content",
+    "member2Name": "Subject Matter Expert (Simulated)",
+    "member2Role": "Academic Advisor",
+    "member3Name": "Firebase Studio AI",
+    "member3Role": "UI/UX & Implementation",
     "acknowledgements": "Acknowledgements",
     "acknowledgementText": "Special thanks to the open-source community and educational content creators whose work inspires and enables projects like this."
   },
@@ -112,7 +105,7 @@
     "question": "Question",
     "submitAnswer": "Submit Answer",
     "correctAnswer": "Correct!",
-    "incorrectAnswer": "Incorrect. Please try again.",
+    "incorrectAnswer": "Incorrect. The correct answer is:",
     "comingSoon": "Exercise content coming soon."
   },
   "notFound": {

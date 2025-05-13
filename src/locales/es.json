@@ -1,3 +1,4 @@
+
 {
   "appName": "Academia de Arquitecto de Datos",
   "nav": {
@@ -41,21 +42,13 @@
   "creditsPage": {
     "title": "Créditos",
     "description": "Este OVA (Objeto Virtual de Aprendizaje) sobre Introducción a la Arquitectura de Datos fue posible gracias a la contribución de las siguientes personas y tecnologías:",
-    "authors": "Autores y Creadores de Contenido",
-    "authorName": "Modelo de Lenguaje AI y Equipo de Desarrollo",
-    "authorRole": "Contenido y Estructura del Curso",
-    "tutors": "Tutores Académicos",
-    "tutorName": "Expertos en la Materia (Simulado)",
-    "tutorRole": "Guía y Revisión",
-    "developers": "Equipo de Desarrollo",
-    "developerName": "Firebase Studio AI",
-    "developerRole": "Implementación en Next.js, Diseño UI/UX",
-    "technologies": "Tecnologías Utilizadas",
-    "techNextJs": "Next.js - Framework de React",
-    "techTailwindCss": "Tailwind CSS - Framework CSS Utility-first",
-    "techShadcnUi": "Shadcn/UI - Componentes UI Reutilizables",
-    "techLucideIcons": "Lucide React - Biblioteca de Iconos",
-    "techGenkit": "Genkit - Integración AI (Simulado para contenido)",
+    "teamTitle": "Equipo de Desarrollo",
+    "member1Name": "Modelo de Lenguaje AI",
+    "member1Role": "Desarrolladora Principal y Contenido",
+    "member2Name": "Experto en la Materia (Simulado)",
+    "member2Role": "Asesor Académico",
+    "member3Name": "Firebase Studio AI",
+    "member3Role": "UI/UX e Implementación",
     "acknowledgements": "Agradecimientos",
     "acknowledgementText": "Un agradecimiento especial a la comunidad de código abierto y a los creadores de contenido educativo cuyo trabajo inspira y permite proyectos como este."
   },
@@ -112,7 +105,7 @@
     "question": "Pregunta",
     "submitAnswer": "Enviar Respuesta",
     "correctAnswer": "¡Correcto!",
-    "incorrectAnswer": "Incorrecto. Por favor, inténtalo de nuevo.",
+    "incorrectAnswer": "Incorrecto. La respuesta correcta es:",
     "comingSoon": "Contenido del ejercicio próximamente."
   },
   "notFound": {
